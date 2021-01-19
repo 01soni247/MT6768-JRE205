@@ -23,7 +23,7 @@
 #define SGEN_MUTE_CH1_KCONTROL_NAME "Audio_SineGen_Mute_Ch1"
 #define SGEN_MUTE_CH2_KCONTROL_NAME "Audio_SineGen_Mute_Ch2"
 
-static const char * const mt6768_sgen_mode_str[] = {
+static const char * mt6768_sgen_mode_str[] = {
 	"I0I1",   "I2",     "I3I4",   "I5I6",
 	"I7I8",   "I9",     "I10I11", "I12I13",
 	"I14",	  "I15I16", "I17I18", "I19I20",
@@ -51,7 +51,7 @@ static const int const mt6768_sgen_mode_idx[] = {
 	19,
 };
 
-static const char * const mt6768_sgen_rate_str[] = {
+static const char * mt6768_sgen_rate_str[] = {
 	"8K", "11K", "12K", "16K",
 	"22K", "24K", "32K", "44K",
 	"48K", "88k", "96k", "176k",
@@ -66,10 +66,10 @@ static const int const mt6768_sgen_rate_idx[] = {
 };
 
 /* this order must match reg bit amp_div_ch1/2 */
-static const char * const mt6768_sgen_amp_str[] = {
+static const char * mt6768_sgen_amp_str[] = {
 	"1/128", "1/64", "1/32", "1/16", "1/8", "1/4", "1/2", "1" };
 
-static const char * const mt6768_sgen_mute_str[] = {
+static const char * mt6768_sgen_mute_str[] = {
 	"Off", "On"
 };
 
@@ -280,7 +280,7 @@ static const struct snd_kcontrol_new mt6768_afe_sgen_controls[] = {
 };
 
 /* audio debug log */
-static const char * const mt6768_afe_off_on_str[] = {
+static const char * mt6768_afe_off_on_str[] = {
 	"Off", "On"
 };
 
